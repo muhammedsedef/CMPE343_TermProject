@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>NLP Project </title>
+    </head>
+    <body>
+        <h1> Yelp Sentiment Analysis : </h1>
+        <h4> Saltuk Buğra Karacan </h4>
+        <h4> Samet Çelik </h4>
+        <h4> Muhammed Sedef </h4>
+        <div class="records">
+      {% if access_records %}
+
+          <th>Our best accuracy is : {{access_records}}</th>
+
+      {% else %}
+       <p>No Access Records. Table Not Created.</p>
+       {% endif %}
+    </div>
+
+    </body>
+</html>
